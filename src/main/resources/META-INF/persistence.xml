@@ -21,7 +21,11 @@
 			<property name="hibernate.connection.user" value="sa" />
 			<property name="hibernate.connection.password" value="" />
 
-			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.show_sql" value="true"/> <!-- sql 표시 (값은 표시 안됨)  -->
+			<property name="hibernate.format_sql" value="true"/> <!--  줄바꿈  -->
+			<property name="hibernate.use_sql_comments" value="true"/> <!-- sql의 JPA식 주석 표시 -->
+			<property name="hibernate.id.new_generator_mappings" value="true"/> <!--  ???? -->
+
 			<property name="hibernate.flushMode" value="FLUSH_AUTO" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
